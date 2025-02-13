@@ -1,42 +1,68 @@
 <!DOCTYPE html>
-<html lang="ru"> <!-- Указываем язык страницы для поисковых систем и доступности -->
+<html lang="ru">
 <head>
-    <meta charset="UTF-8"> <!-- Кодировка UTF-8 поддерживает русский язык -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Адаптивность для мобильных устройств -->
-    <title>Кроссовок.net</title> <!-- Заголовок вкладки в браузере -->
-    <link rel="stylesheet" href="style.css"> <!-- Подключение файла стилей -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кроссовок.net – Магазин кроссовок</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Добро пожаловать!</h1> <!-- Заголовок главной страницы -->
+    <div class="logo">
+        <img src="logo.png" alt="Логотип Кроссовок.net">
+        <h1>Кроссовок.net</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
 </header>
 
-<!-- Навигационное меню -->
-<nav>
-    <ul>
-        <li>
-            <!-- Ссылка на магазин, открывается в новой вкладке (target="_blank") -->
-            <a href="https://www.lamoda.ru/c/5971/shoes-muzhkrossovki/" target="_blank">
-                Перейти в наш магазин
-            </a>
-        </li>
-    </ul>
-</nav>
-
 <main>
-    <!-- Секция с описанием сайта -->
-    <section class="content">
-        <p>
-            Приветствуем вас на нашем сайте! Здесь вы найдете огромное количество кроссовок
-            для разных времен года и разных целей.
-        </p>
+    <!-- Блок преимуществ -->
+    <section class="benefits">
+        <div class="benefit">
+            <img src="delivery.png" alt="Доставка">
+            <p>Быстрая доставка по всей России</p>
+        </div>
+        <div class="benefit">
+            <img src="discount.png" alt="Скидки">
+            <p>Скидки до 50% на топовые модели</p>
+        </div>
+        <div class="benefit">
+            <img src="quality.png" alt="Качество">
+            <p>Оригинальные кроссовки от ведущих брендов</p>
+        </div>
     </section>
 
-    <!-- Секция с изображением -->
-    <section class="photo">
-        <img src="i (1).webp" alt="Разные модели кроссовок" width="400">
-        <!-- alt="Разные модели кроссовок" — описание изображения для слабовидящих и SEO -->
+    <!-- Каталог товаров -->
+    <section class="catalog">
+        <h2>Популярные модели</h2>
+        <div class="products">
+            <div class="product">
+                <img src="nike.jpg" alt="Nike Air Max">
+                <h3>Nike Air Max</h3>
+                <p>12 990 ₽</p>
+                <button>Купить</button>
+            </div>
+            <div class="product">
+                <img src="adidas.jpg" alt="Adidas Ultraboost">
+                <h3>Adidas Ultraboost</h3>
+                <p>14 990 ₽</p>
+                <button>Купить</button>
+            </div>
+            <div class="product">
+                <img src="puma.jpg" alt="Puma RS-X">
+                <h3>Puma RS-X</h3>
+                <p>9 990 ₽</p>
+                <button>Купить</button>
+            </div>
+        </div>
     </section>
 </main>
 
